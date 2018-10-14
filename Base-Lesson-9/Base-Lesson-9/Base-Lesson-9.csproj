@@ -42,8 +42,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lesson.cs" />
-    <Compile Include="PracticeExamples.cs" />
+    <Compile Include="Lesson.ExtentionMethods.cs" />
+    <Compile Include="Lesson.Deconstruction.cs" />
+    <Compile Include="Practice.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

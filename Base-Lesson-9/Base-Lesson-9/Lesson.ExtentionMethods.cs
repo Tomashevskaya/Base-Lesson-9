@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace Base_Lesson_9.Lesson
 {
-    public static class Lesson
+    public static partial class Lesson
     {
     }   
 

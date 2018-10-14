@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Base_Lesson_9.Practice
 {
-    public static class PracticeExamples
+    public static class Practice
     {
         /// <summary>
         /// L9-P-EX-1/2
