@@ -16,29 +16,41 @@ namespace Base_Lesson_9.Lesson
 
     public class Playlist
     {
-        public Song[] Songs { get; set; }
+        public List<Song> Songs { get; set; }
 
-        public void Sort(List<Song> songs)
-        {
-            //Do some sorting
+        public void Sort()
+        {            
+            this.Songs = this.Songs.SortSongs();
         }
     }
 
     public class AudioPlayer
     {
-        public Song[] Songs { get; set; }
+        public List<Song> Songs { get; set; }
 
         public void Sort(List<Song> songs)
         {
-            //Do some sorting
+           
+            this.Songs = this.Songs.SortSongs();
         }
 
         public void Load(params Playlist[] playlists)
         {
-            var songs = playlists.SelectMany(x => x.Songs);
-            //Do some sorting
+            var songs = playlists.SelectMany(x => x.Songs);           
+            this.Songs = this.Songs.SortSongs();
             //Do distincting
-            this.Songs = songs.ToArray();
+            //this.Songs = songs.ToArray();
+
+            //this.Songs.FirstOrDefault()
+        }
+    }
+
+    public static class SortHelper
+    {
+        public static List<Song> SortSongs(this List<Song> songs)
+        {
+            //алгоритм сортировки
+            return songs;
         }
     }
     
